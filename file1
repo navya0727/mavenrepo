@@ -5,3 +5,4 @@ testing agent-1
 this is for testing agent-2
 this is for both agent-1 and agent-2
 testing the maven build by installing maven in jenkins slave. we are not able to run the maven if we install it in jenkins masters server
+integrated sonar, nexus and tomcat
