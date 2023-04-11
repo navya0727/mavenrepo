@@ -29,11 +29,7 @@ pipeline {
 
    stage ('code quality'){
      steps {
-        withSonarQubeEnv(credentialsId: 'jenkins-sonar-global-token', installationName: 'sonar-server' ) {
-    // some block
-
        sh ' mvn sonar:sonar '
-	  }
 
     }
 
