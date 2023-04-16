@@ -30,8 +30,9 @@ pipeline {
    stage ('code quality'){
      steps {
         withSonarQubeEnv(credentialsId: 'jenkins-sonar-global-token', installationName: 'sonar-server' ) 
+       {
        sh ' mvn sonar:sonar '
-
+       }
     }
 
    } //sonar stage completes here 
